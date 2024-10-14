@@ -82,7 +82,7 @@ jobs:
           create server example_server
             foreign data wrapper wasm_wrapper
             options (
-              fdw_package_url 'https://github.com/${GITHUB_REPOSITORY}/releases/download/v${VERSION}/${PROJECT}.wasm',
+              fdw_package_url 'https://github.com/sanchezcarlosjr/http_wasm_fwd/releases/download/v${VERSION}/wasm_fdw_example.wasm',
               fdw_package_name '${PACKAGE}',
               fdw_package_version '${VERSION}',
               fdw_package_checksum '${CHECKSUM}',
